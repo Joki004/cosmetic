@@ -509,6 +509,219 @@ body{
             transform: scale(1.1);
   }
 
+
+  /*--------------------------------team---------------------*/
+.team-card{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+}
+.up-card{
+  display: flex;
+  border: solid red;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-team{
+  width: 100%;
+  height: auto;
+  border: solid;
+  position: relative;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.media{
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  width: 30%;
+  gap:10px;
+  position:absolute;
+  top: 0;
+  left: -10%;
+ 
+}
+
+.img-team:hover, .media:hover{
+ left:0;
+
+}
+.media>a{
+ 
+  border: #fff solid;
+  width: 70%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+}
+
+.id-team{
+  width: 100%;
+  border: solid;
+}
+
+
+.team {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f5f5f5), color-stop(50.1%, #fff));
+  background: linear-gradient(#f5f5f5 50%, #fff 50.1%);
+}
+
+.team .box-container {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+
+.team .box-container .box-team {
+  border: 0.2rem solid #222;
+  text-align: center;
+  height: 50%;
+  width: 30%;
+
+}
+
+.team .box-container .box-team:hover .image-team img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.team .box-container .box-team:hover .image-team .share {
+  left: 0;
+}
+
+.team .box-container .box-team .image-team {
+  height: 50%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.team .box-container .box-team .image-team img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .box-container .box-team .image-team .share {
+  position: absolute;
+  top: 0;
+  left: -8rem;
+  background: #222;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.team .box-container .box-team .image-team .share a {
+  height: 3rem;
+  width: 5rem;
+  border: 0.2rem solid #fff;
+  font-size: 2.5rem;
+  color: #fff;
+  line-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .box-container .box-team .image-team .share a:hover {
+  background: #fff;
+  color: #222;
+}
+
+.team .box-container .box-team .content {
+  border-top: 0.2rem solid #222;
+  padding: 1.5rem;
+
+}
+
+.team .box-container .box-team .content h3 {
+  font-size: 2rem;
+  color: #222;
+}
+
+.team .box-container .box-team .content p {
+  font-size: 1.5rem;
+  color: #e84393;
+}
+
+
+
+/*-------------------------------Review--------------------*/
+
+.reviews-slider .slide .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.reviews-slider .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+
+.reviews-slider .slide .user h3 {
+  font-size: 2rem;
+  color: #222;
+}
+
+.reviews-slider .slide .user .stars i {
+  font-size: 1.5rem;
+  color: #e84393;
+}
+
+.reviews-slider .slide .text {
+  padding: 2rem;
+  background: #f5f5f5;
+  border-radius: .5rem;
+  line-height: 2;
+  font-size: 1.5rem;
+  color: #777;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.reviews-slider .slide .text::before {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  left: 3rem;
+  height: 2rem;
+  width: 2rem;
+  background: #f5f5f5;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 /*------------------------media-query--------------------*/
 
 @media screen and (max-width:768px){
