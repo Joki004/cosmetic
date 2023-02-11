@@ -141,10 +141,377 @@ body{
   }
 
   
+
+  /*-----------------------------home----------------------*/
+  .home{
+    padding: 0;
+    width: 100%;
+
+  }
+
+  .home .slide{
+   display: none;
+    height: calc(100vh - 8rem);
+   
+  }
+
+  .home .slide.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+  }
+
+  .home .slide .content {
+    width: 50%;
+    padding: 2rem 7%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: #fce9f2;
+    position: relative;
+  }
+
+  .home .slide .content img {
+    height: 25rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+    -webkit-animation: fadeUp .2s linear backwards .2s;
+            animation: fadeUp .2s linear backwards .2s;
+    display: none;
+  }
   
+  .home .slide .content span {
+    color: #e84393;
+    display: block;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    -webkit-animation: fadeUp .2s linear backwards .4s;
+            animation: fadeUp .2s linear backwards .4s;
+  }
+  
+  .home .slide .content h3 {
+    font-size: 300%;
+    text-transform: uppercase;
+    color: #222;
+    -webkit-animation: fadeUp .2s linear backwards .6s;
+            animation: fadeUp .2s linear backwards .6s;
+  }
+  
+  .home .slide .content .btn {
+    -webkit-animation: fadeUp .2s linear backwards .8s;
+            animation: fadeUp .2s linear backwards .8s;
+  }
+  
+  .home .slide .content .controls {
+    position: absolute;
+    bottom: 12%;
+    right: -7rem;
+  }
+  
+  .home .slide .content .controls div {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    background: #fff;
+    color: #222;
+    margin: 0 1rem;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .home .slide .content .controls div:hover {
+    background: #e84393;
+    color: #fff;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  .home .slide .image {
+    width: 50%;
+  }
+  
+  .home .slide .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border: 0.2rem solid #222;
+    background: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #222;
+  }
+  
+  .btn:hover {
+    color: #fff;
+    background: #e84393;
+  }
+
+
+
+  /*-----------------------category------------------------*/
+
+  .category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 1%;
+    width: 100%;
+    height: 100%;
+    background-color: #BBA5B0;
+  }
+
+  .box{
+   height: 100%;
+   width: 15%;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F19EC8;
+    color: black;
+   
+  }
+
+  .box>img{
+    width: 50%;
+    height: 50%;
+  }
+ 
+
+  /*---------------------------------------about--------------------------*/
+  .about{
+    background: url(../img/about-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+   padding: 4%;
+  }
+
+  .about .content {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   padding: 1%;
+    font-size: 200%;
+  }
+  
+  .about .content span {
+    color: #e84393;
+   
+  }
+  
+  .about .content h3 {
+    padding-top: 1rem;
+    color: #222;
+  }
+  
+  .about .content p {
+    font-size: 1.5rem;
+    color: #777;
+    padding: 1rem 0;
+  }
+
+  .align-center{
+    align-self: center;
+  }
+  /*--------------------Price-----------------------*/
+  .price{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fce9f2;
+    padding-top: 2%;
+    gap:5px;
+  }
+
+  .price-category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .title-category{
+    width: 90%;
+    height: 100%;
+    border: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F19EC8;
+    padding-left: 2%;
+    border-radius: 2%;
+    font-size: 300%;
+    border-radius: 8px;
+  }
+
+  .arrow-up, .arrow-up-powder, .arrow-up-make-up{
+    display: none;
+
+  }
+  .arrow-down{
+    display: block;
+}
+    .arrow-down, .arrow-up{
+    cursor: pointer;
+    }
+
+    
+    .cosmetics {
+    display: none;
+  }
+
+  .price-category>ul{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+    gap: 5px;
+    margin-top: 1%;
+  }
+
+  .price-category>ul>li{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .service{
+    display: flex;
+    align-items: center;
+    border: solid;
+    width: 70%;
+    justify-content: center;
+  }
+  .service-price{
+    display: flex;
+    align-items: center;
+    border: solid;
+    width: 30%;
+    justify-content: center;
+  }
+
+  .title{
+    background-color: #54424A;
+  }
+
+  #price{
+    font-size: 300%;
+  }
+
+
+
+/*----------------------Galery----------------------------*/
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#54424A ;
+    width: 100%;
+    height: 100%;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.lightbox{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.gallery-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    border: solid;
+    height: 300px;
+    overflow: hidden;
+  
+    background-color: #fff;
+    border: #fff;
+
+}
+
+.gallery-box>a{
+    overflow: hidden;
+    padding: 2px;
+    width: 90%;
+    height: 90%;
+}
+
+.gallery-box>a>img{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.gallery .lightbox a:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
 /*------------------------media-query--------------------*/
 
-@media screen and (max-width:750px){
+@media screen and (max-width:768px){
     .menu_icon{
         display: contents;
     }
@@ -155,4 +522,59 @@ body{
         justify-content: flex-end;
     }
 
-}
+    .home .slide {
+        position: relative;
+        height: calc(100vh - 6rem);
+      }
+      .home .slide .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        height: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+      .home .slide .content img {
+        display: inline-block;
+      }
+      .home .slide .content .controls {
+        position: static;
+        margin-top: 7rem;
+      }
+      .home .slide .content .controls div {
+        margin: 0 .5rem;
+      }
+      .home .slide .image {
+        width: 100%;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+
+      .header #search-btn {
+        display: inline-block;
+      }
+
+      .category{
+        padding-top: 15%;
+      }
+
+      .box>p{
+        font-size: 70%;
+      }
+      .gallery-box{
+     
+        width: 30%;
+        
+        height: 300px;
+       
+    
+    }
+
+
+    }
+    

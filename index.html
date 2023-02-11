@@ -13,7 +13,7 @@
         
     </head>
     <body>
-      
+      <!------------------------------Header----------------------------------------->
         <div class="header">
             <div class="logo">
                 <img class="logo_img" src="./img/perfume-bottle.png" alt="">
@@ -33,7 +33,7 @@
             </div>
         </div>
        
-
+    <!------------------------------Nav-bar----------------------------------------->
         <nav class="navbar">
             <div id="close-navbar" class="fas fa-times"></div>
             <a href="#home">home</a>
@@ -44,6 +44,240 @@
             <a href="#blogs">blogs</a>
         </nav>
 
+
+        <section class="home" id="home">
+            <div class="slide active">
+                <div class="content">
+                    <img src="./img/content-img-1.png" alt="">
+                    <span>About us </span>
+                    <h3>Cosmetic</h3>
+                    <a href="#" class="btn">read more</a>
+                    <div class="controls">
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./img/home-img-1.png" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <img src="./img/content-img-2.png" alt="">
+                    <span>new arrivals 2022</span>
+                    <h3>accessories</h3>
+                    <a href="#" class="btn">read more</a>
+                    <div class="controls">
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./img/home-img-2.png" alt="">
+                </div>
+            </div>
+    
+            <div class="slide">
+                <div class="content">
+                    <img src="./img/content-img-3.png" alt="">
+                    <span>new collections</span>
+                    <h3>skin care</h3>
+                    <a href="#" class="btn">read more</a>
+                    <div class="controls">
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./img/home-img-3.png" alt="">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <img src="./img/content-img-1.png" alt="">
+                    <span>new collections</span>
+                    <h3>skin care</h3>
+                    <a href="#" class="btn">read more</a>
+                    <div class="controls">
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./img/home-img-3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!-------------------Category section-------------------->
+
+        <section class="category">
+
+            <a href="#" class="box">
+                <img src="./img/category-1.png" alt="">
+                <p>cosmetics</p>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="./img/category-2.png" alt="">
+                <p>makeup</p>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="./img/category-3.png" alt="">
+                <p>powder</p>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="./img/category-4.png" alt="">
+                <p>lotions</p>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="./img/category-5.png" alt="">
+                <p>lipstick</p>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="./img/category-6.png" alt="">
+                <p>mascara</p>
+            </a>
+        </section>
+        <section class="price" >
+            <h1 id="price">Price</h1>
+<!-----------------------------------------------------------cosmetic---------------------------->
+            <div class="price-category">
+                <h1 class="title-category">Cosmetic 
+                
+                <span onclick="cosmectic_price()">
+                    <div class="arrow-down">
+                        <i class="bx bxs-down-arrow" ></i> 
+                    </div>
+
+                    <div class="arrow-up">
+                        <i class="bx bxs-up-arrow "></i>
+                    </div>
+                  </span></h1>
+                <ul id="cosmetics" class="cosmetics">
+                    <li><p class="service title">zabieg</p><span class="service-price title">cena</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+
+                </ul>
+            </div>
+<!-----------------------------------------------------------Makeup---------------------------->
+
+            <div class="price-category">
+                <h1 class="title-category">Makeup
+                
+                <span onclick="makeup_price()">
+                    <div class="arrow-down-make-up">
+                        <i class="bx bxs-down-arrow" ></i> 
+                    </div>
+
+                    <div class="arrow-up-make-up">
+                        <i class="bx bxs-up-arrow "></i>
+                    </div>
+                  </span></h1>
+                <ul id="makeup" class="makeup">
+                    <li><p class="service title">zabieg</p><span class="service-price title">cena</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    
+                </ul>
+            </div>
+<!-----------------------------------------------------------powder---------------------------->
+
+            <div class="price-category">
+                <h1 class="title-category">Powder
+                
+                <span onclick="powder_price()">
+                    <div class="arrow-down-powder">
+                        <i class="bx bxs-down-arrow" ></i> 
+                    </div>
+
+                    <div class="arrow-up-powder">
+                        <i class="bx bxs-up-arrow "></i>
+                    </div>
+                  </span></h1>
+                <ul id="powder" class="powder">
+                    <li><p class="service title">zabieg</p><span class="service-price title">cena</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    
+                </ul>
+            </div>
+
+        </section>
+
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+
+        <div class="heading">
+            <h1>our gallery</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur officia beatae distinctio
+                minus optio?</p>
+        </div>
+
+        <div class="lightbox">
+            <div class="gallery-box">
+                <a href="./img/img-1.jpg"><img src="./img/img-1.jpg" alt=""></a>
+            </div>
+            <div class="gallery-box">
+                <a href="./img/img-2.jpg"><img src="./img/img-2.jpg" alt=""></a>
+            </div>
+            <div class="gallery-box">
+                <a href="./img/img-3.jpg"><img src="./img/img-3.jpg" alt=""></a>
+            </div>
+            <div class="gallery-box">
+                <a href="./img/img-4.jpg"><img src="./img/img-4.jpg" alt=""></a>
+            </div>
+            <div class="gallery-box">
+                <a href="./img/img-5.jpg"><img src="./img/img-5.jpg" alt=""></a>
+            </div>
+            <div class="gallery-box">
+                <a href="./img/img-6.jpg"><img src="./img/img-6.jpg" alt=""></a>
+            </div>
+
+          
+          
+          
+            
+           
+        </div>
+
+    </section>
+
+    <!-- gallery section ends -->
+            <!-- about section starts  -->
+
+        <section class="about" id="about">
+
+            <div class="content">
+                <span>why choose us?</span>
+                <h3>makeup makes difference</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum explicabo, quos voluptate incidunt illo,
+                blanditiis, accusamus ut quisquam quia sapiente iure. Rerum earum corrupti neque, nobis ratione
+                obcaecati voluptatem fuga.</p>
+                <a href="#" class="btn align-center">read more</a>
+            </div>
+
+        </section>
+
+    <!-- about section ends -->
         <script src="./JS/script.js"></script>
     </body>
 </html>
