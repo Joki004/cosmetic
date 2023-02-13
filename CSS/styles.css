@@ -2,22 +2,24 @@
 *{
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
-  margin:0; padding:0;
+  margin:0; 
+  padding:0;
   text-transform: capitalize;
   transition: all .5s linear;
   text-decoration: none;
   
 }
 
-body{
-    width: 100%;
+body,.body{
+    width: 99.5%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*--overflow-x: hidden;--*/
     padding: 0;
-   
+    
 }
 
 /*-------------------Header-------------------------------*/
@@ -26,11 +28,13 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 98%;
     height: 100%;
     align-items: center;
     background-color: #BBA5B0;
     padding: 1%;
+    border:solid black;
+    margin-right: 0;
 }
 
 .logo_img{
@@ -67,12 +71,18 @@ body{
     width: 100%;
     height: 100%;
 }
-
+.menu_header{
+  justify-content: flex-end;
+  padding-right: 2%;
+}
 .menu_icon{
     display: none;
     cursor: pointer;
 }
-
+.menu_header>li>a{
+  text-decoration: none;
+  color: #222;
+}
 
 
 /*----------------------nav-bar--------------------------*/
@@ -280,7 +290,7 @@ body{
     align-items: center;
     gap: 8px;
     padding: 1%;
-    width: 100%;
+    width: 98%;
     height: 100%;
     background-color: #BBA5B0;
   }
@@ -316,7 +326,7 @@ body{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    width: 92%;
     height: 100%;
    padding: 4%;
   }
@@ -674,6 +684,37 @@ body{
 
 /*-------------------------------Review--------------------*/
 
+.reviews{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.swiper-wrapper{
+  width: 95%;
+  margin: 1%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  height: 500px;
+  background-color: #54424A;
+}
 .reviews-slider .slide .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,7 +763,86 @@ body{
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+
+.swiper-slide{
+  display: none;
+}
+
+.activeC{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.controlsComment{
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+  
+  align-items: center;
+  justify-content: center;
+  background-color: #54424A;
+  gap: 5%;
+  margin-top: 10px;
+
+}
+
+.ArrowComment{
+ border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 400%;
+  width: 10%;
+  background-color: #fff;
+  transition: width 1s;
+
+}
+.ArrowComment:hover{
+  width: 15%;
+}
+
+
+
+/*----------------footer------------------------------*/
+
+.footer{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+  background-color: #777;
+  width: 100%;
+  height: 100%;
+}
+.map{
+  border: solid;
+  width: 50%;
+}
+.boxFooter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+
+}
 /*------------------------media-query--------------------*/
+
+@media screen and (max-width:1050px){
+   .menu_icon{
+        display: contents;
+    }
+    .menu_header{
+        display: none;
+    }
+    .menu{
+        justify-content: flex-end;
+    }
+
+}
 
 @media screen and (max-width:768px){
     .menu_icon{

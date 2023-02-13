@@ -13,7 +13,8 @@ document.querySelector('#close-navbar').onclick = () =>{
     navbar.classList.remove('active');
   };
 
-  let slides = document.querySelectorAll('.home .slide');
+let slides = document.querySelectorAll('.home .slide');
+console.log(slides);
 let index = 0;
 
 function next(){
@@ -27,6 +28,34 @@ function prev(){
   index = (index - 1 + slides.length) % slides.length;
   slides[index].classList.add('active');
 };
+
+let comment = document.querySelectorAll('.reviews .swiper-slide');
+console.log(comment);
+let indexComment = 0;
+
+function prevComment(){
+
+  comment[indexComment].classList.remove('activeC');
+  indexComment=indexComment-1;
+  if(indexComment<0){
+    indexComment=comment.length-1;
+
+  }
+  console.log(indexComment);
+  comment[indexComment].classList.add('activeC');
+}
+
+function nextComment(){
+
+  comment[indexComment].classList.remove('activeC');
+  indexComment=indexComment+1;
+  if(indexComment===comment.length){
+    indexComment=0;
+
+  }
+  console.log(indexComment);
+  comment[indexComment].classList.add('activeC');
+}
 
 function cosmectic_price(){
     let price = document.getElementsByClassName("cosmetics");
@@ -112,19 +141,3 @@ function powder_price(){
 
 
 
-var swiper = new Swiper(".reviews-slider", {
-  loop: true,
-  grabCursor : true,
-  spaceBetween: 20,
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    991: {
-      slidesPerView: 3,
-    },
-  },
-});
