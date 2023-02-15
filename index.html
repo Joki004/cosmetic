@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,10 +21,10 @@
             <div class="menu">
                 <ul class="no-bullets wrap menu_header">
                     <li > <a href="#home">Home</a></li>
-                    <li><a href="#price">Cennik</a></li>
+                    <li><a href="./pages/price.html">Cennik</a></li>
                     <li><a href="#gallery">Galeria</a></li>
                     <li><a href="#about">O Nas</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="./pages/contact.html">Kontakt</a></li>
                 </ul>
                 <div class="menu_icon">
                     <i class='bx bx-menu bx-lg  ' id="menu-btn" ></i>
@@ -37,13 +37,13 @@
         <nav class="navbar">
             <div id="close-navbar" class="fas fa-times"></div>
             <a href="#home">Home</a>
-            <a href="#price">Cennik</a>
+            <a href="./pages/price.html">Cennik</a>
             <a href="#gallery">Galeria</a>
             <a href="#about">O Nas</a>
-            <a href="#contact">Kontakt</a>
+            <a href="./pages/contact.html">Kontakt</a>
         </nav>
 
-
+    <!------------------------------Home----------------------------------------->
         <section class="home" id="home">
             <div class="slide active">
                 <div class="content">
@@ -146,44 +146,36 @@
         </section>
         <section class="price" >
             <h1 id="price">Price</h1>
+           <!-- -->
 <!-----------------------------------------------------------cosmetic---------------------------->
             <div class="price-category">
-                <h1 class="title-category">Cosmetic 
-                
-                <span onclick="cosmectic_price()">
-                    <div class="arrow-down">
-                        <i class="bx bxs-down-arrow" ></i> 
-                    </div>
-
-                    <div class="arrow-up">
-                        <i class="bx bxs-up-arrow "></i>
-                    </div>
-                  </span></h1>
-                <ul id="cosmetics" class="cosmetics">
-                    <li><p class="service title">zabieg</p><span class="service-price title">cena</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-
+                <span class="title-category">
+                <p> Nitkowanie </p>
+                <div class="toggle-btn" onclick="priceDisplay('threading')">
+                    <div class="arrow"></div>
+                   </div>
+                </span>
+                <ul id="threading" class="threading">
+                    <li><p class="service title">Usługi</p><span class="service-price title">Cena</span></li>
+                    <li><p class="service">Nitkowanie brwi, masaż, konsultacja</p><span class="service-price">35,00 zl</span></li>
+                    <li><p class="service">Nitkowanie, barwienie, masaż, konsultacja</p><span class="service-price">50,00 zl</span></li>
+                    <li><p class="service">Nitkowanie, henna pudrowa - organiczna, geometria</p><span class="service-price">85,00 zl</span></li>
+                    <li><p class="service">Nitkowanie górnej wargi</p><span class="service-price">25,00 zl</span></li>
+                    <li><p class="service">Nitkowanie brody</p><span class="service-price">25,00 zl</span></li>
+                    <li><p class="service">Nitkowanie policzków</p><span class="service-price">39,00 zl</span></li>
+                    <li><p class="service">Nitkowanie brwi, górnej wargi i brody</p><span class="service-price">70,00 zl</span></li>
                 </ul>
             </div>
 <!-----------------------------------------------------------Makeup---------------------------->
 
             <div class="price-category">
-                <h1 class="title-category">Makeup
-                
-                <span onclick="makeup_price()">
-                    <div class="arrow-down-make-up">
-                        <i class="bx bxs-down-arrow" ></i> 
-                    </div>
-
-                    <div class="arrow-up-make-up">
-                        <i class="bx bxs-up-arrow "></i>
-                    </div>
-                  </span></h1>
-                <ul id="makeup" class="makeup">
+                <span class="title-category">
+                    <p> Laminowanie </p>
+                    <div class="toggle-btn" onclick="priceDisplay('lamination')">
+                        <div class="arrow"></div>
+                       </div>
+                    </span>
+                <ul id="lamination" class="lamination">
                     <li><p class="service title">zabieg</p><span class="service-price title">cena</span></li>
                     <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
                     <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
@@ -196,24 +188,16 @@
 <!-----------------------------------------------------------powder---------------------------->
 
             <div class="price-category">
-                <h1 class="title-category">Powder
-                
-                <span onclick="powder_price()">
-                    <div class="arrow-down-powder">
-                        <i class="bx bxs-down-arrow" ></i> 
-                    </div>
-
-                    <div class="arrow-up-powder">
-                        <i class="bx bxs-up-arrow "></i>
-                    </div>
-                  </span></h1>
+                <span class="title-category">
+                    <p> Barwanie </p>
+                    <div class="toggle-btn" onclick="priceDisplay('powder')">
+                        <div class="arrow"></div>
+                       </div>
+                    </span>
                 <ul id="powder" class="powder">
-                    <li><p class="service title">zabieg</p><span class="service-price title">cena</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
+                    <li><p class="service title">Usługi</p><span class="service-price title">cena</span></li>
+                    <li><p class="service">Barwienie farbką</p><span class="service-price">25,00 zl</span></li>
+                    <li><p class="service">Barwienie henna pudrowa - organiczna</p><span class="service-price">65,00 zl</span></li>
                     
                 </ul>
             </div>
@@ -271,7 +255,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum explicabo, quos voluptate incidunt illo,
                 blanditiis, accusamus ut quisquam quia sapiente iure. Rerum earum corrupti neque, nobis ratione
                 obcaecati voluptatem fuga.</p>
-                <a href="#" class="btn align-center">read more</a>
+                <a href="./pages/AboutUs.html" class="btn align-center">read more</a>
             </div>
 
         </section>
@@ -537,7 +521,9 @@
     </section>
     <div class="credit"> Design and Develop by <a target="_blank" href="https://itsazzad.com/"><span>IT
         Sazzad</span></a> | all rights reserved! </div>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="./JS/script.js"></script>
+        
     </body>
 </html>
 
