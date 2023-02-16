@@ -39,11 +39,12 @@ html::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 99%;
-  height: 20px;
+  width: 98%;
+  height: 100%;
   align-items: center;
-  background-color: #bba5b0;
-  padding: 1%;
+  background-color: #ffe8f7;
+  padding: 1% 1.5% 1.5% 1.5%;
+
   margin-right: 0;
   position: -webkit-sticky;
   position: sticky;
@@ -51,7 +52,6 @@ html::-webkit-scrollbar-thumb {
   left: 0;
   right: 0;
   z-index: 1000;
-  
 }
 
 .logo_img {
@@ -70,34 +70,48 @@ html::-webkit-scrollbar-thumb {
 }
 .menu {
   width: 60%;
+  height: 65px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .no-bullets {
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  gap: 8%;
-  font-size: 140%;
 }
 
 .wrap {
   flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
 }
 .menu_header {
+  display: flex;
+  flex-direction: row;
   justify-content: flex-end;
-  padding-right: 2%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 95%;
+  padding: 2%;
+  gap: 8%;
+  font-size: 140%;
 }
-.menu_icon {
+.min_ecran {
   display: none;
-  cursor: pointer;
 }
 .menu_header > li > a {
   text-decoration: none;
   color: #222;
+}
+.menu_header > li {
+  padding: 0.5%;
+}
+
+.menu_header > li:hover {
+  border: solid 1px;
+}
+.menu_icon {
+  display: none;
+  cursor: pointer;
 }
 
 /*----------------------nav-bar--------------------------*/
@@ -166,7 +180,8 @@ html::-webkit-scrollbar-thumb {
 /*-----------------------------home----------------------*/
 .home {
   padding: 0;
-  width: 100%;
+
+  width: 101%;
 }
 
 .home .slide {
@@ -196,7 +211,7 @@ html::-webkit-scrollbar-thumb {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background: #fce9f2;
+  background: #fff5ff;
   position: relative;
 }
 
@@ -207,6 +222,7 @@ html::-webkit-scrollbar-thumb {
   -webkit-animation: fadeUp 0.2s linear backwards 0.2s;
   animation: fadeUp 0.2s linear backwards 0.2s;
   display: none;
+  padding-top: 2%;
 }
 
 .home .slide .content span {
@@ -295,27 +311,46 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding: 1%;
-  width: 98%;
+
+  padding: 5% 1% 5% 1%;
+  width: 99%;
   height: 100%;
-  background-color: #bba5b0;
+  background-color: #fff;
 }
 
 .box {
-  height: 100%;
-  width: 15%;
-  border: solid;
+  height: 90%;
+  width: 11%;
+  padding: 1%;
+  gap: 10px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f19ec8;
-  color: black;
+  background-color: #f5f5f5;
+  color: #000000;
+}
+
+.box:hover {
+  width: 10%;
+  background-color: #000000;
+  color: white;
+  border: solid;
+}
+
+.category .box:hover img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.category .box:hover p {
+  color: #fff;
 }
 
 .box > img {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 40%;
 }
 
 /*---------------------------------------about--------------------------*/
@@ -330,9 +365,11 @@ html::-webkit-scrollbar-thumb {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 92%;
+  width: 93%;
   height: 100%;
   padding: 4%;
+  padding-bottom: 7%;
+  padding-top: 5%;
 }
 
 .about .content {
@@ -363,23 +400,31 @@ html::-webkit-scrollbar-thumb {
 }
 /*--------------------Price-----------------------*/
 .price {
-  width: 100%;
+  width: 101%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #fce9f2;
-  padding-top: 2%;
-  gap: 5px;
+  background-color: #f5f5f5;
+  padding-top: 5%;
+  padding-bottom: 6%;
+  gap: 20px;
 }
-
+.price > h1 {
+  margin-bottom: 3%;
+}
 .price-category {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
+  margin-bottom: 1%;
   height: 100%;
+}
+
+.title-category:hover {
+  background: #fff5ff;
 }
 
 .title-category {
@@ -390,22 +435,21 @@ html::-webkit-scrollbar-thumb {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #f19ec8;
+  background-color: #ffe8f7;
   padding-left: 2%;
-  border-radius: 2%;
+  border-radius: 1%;
   font-size: 1000%;
   border-radius: 8px;
 }
-.title-category>p{
+.title-category > p {
   font-size: 20%;
 }
-
 
 .toggle-btn {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  width:5%;
+  width: 5%;
   height: 100%;
   padding: 10px;
   text-decoration: none;
@@ -413,7 +457,6 @@ html::-webkit-scrollbar-thumb {
 }
 
 .arrow {
- 
   font-size: 150%;
   justify-content: flex-end;
 
@@ -426,12 +469,12 @@ html::-webkit-scrollbar-thumb {
 .arrow::before,
 .arrow::after {
   position: relative;
-  content: '';
+  content: "";
   display: block;
   width: 10px;
   height: 1px;
   background: rgb(0, 0, 0);
- 
+
   transition: 0.3s ease-in-out;
 }
 
@@ -444,7 +487,6 @@ html::-webkit-scrollbar-thumb {
   top: -1px;
   transform: rotate(-45deg);
 }
-
 
 .toggle-btn.active .arrow::before {
   transform: rotate(-45deg);
@@ -507,11 +549,16 @@ html::-webkit-scrollbar-thumb {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #54424a;
+  background-color: #fff;
   width: 100%;
   height: 100%;
+  gap: 50px;
+  padding-top: 5%;
+  padding-bottom: 7%;
 }
-
+.heading > h1 {
+  font-size: 180%;
+}
 .heading {
   display: flex;
   flex-direction: column;
@@ -519,6 +566,8 @@ html::-webkit-scrollbar-thumb {
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  gap: 20px;
+  font-size: 100;
 }
 
 .lightbox {
@@ -528,6 +577,7 @@ html::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
+
   gap: 10px;
 }
 
@@ -537,10 +587,10 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   width: 25%;
   border: solid;
-  height: 300px;
+  height: 257.3px;
   overflow: hidden;
 
-  background-color: #fff;
+  background-color: #fff5ff;
   border: #fff;
 }
 
@@ -564,18 +614,6 @@ html::-webkit-scrollbar-thumb {
 }
 
 /*--------------------------------team---------------------*/
-.team-card {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 100%;
-}
-.up-card {
-  display: flex;
-  border: solid red;
-  width: 100%;
-  overflow: hidden;
-}
 
 .img-team {
   width: 100%;
@@ -627,21 +665,34 @@ html::-webkit-scrollbar-thumb {
     color-stop(50%, #f5f5f5),
     color-stop(50.1%, #fff)
   );
-  background: linear-gradient(#f5f5f5 50%, #fff 50.1%);
+  background: linear-gradient(#f5f5f5 50%, #fff 50%);
+  width: 91%;
+  height: 100%;
+  padding-bottom: 7%;
+  padding: 5%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .team .box-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   -ms-grid-columns: (minmax(31rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  width: 90%;
+  padding: 1%;
   gap: 2rem;
 }
 
 .team .box-container .box-team {
   border: 0.2rem solid #222;
   text-align: center;
-  height: 50%;
+  height: 52%;
   width: 30%;
 }
 
@@ -725,12 +776,14 @@ html::-webkit-scrollbar-thumb {
 /*-------------------------------Review--------------------*/
 
 .reviews {
-  width: 100%;
+  width: 91%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 5%;
+  padding-bottom: 7%;
 }
 
 .swiper {
@@ -743,7 +796,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .swiper-wrapper {
-  width: 95%;
+  width: 70%;
   margin: 1%;
   border-radius: 8px;
   display: flex;
@@ -752,7 +805,7 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   padding: 1%;
   height: 500px;
-  background-color: #54424a;
+  background-color: #f5f5f5;
 }
 .reviews-slider .slide .user {
   display: -webkit-box;
@@ -782,7 +835,7 @@ html::-webkit-scrollbar-thumb {
 
 .reviews-slider .slide .text {
   padding: 2rem;
-  background: #f5f5f5;
+  background: #ffe8f7;
   border-radius: 0.5rem;
   line-height: 2;
   font-size: 1.5rem;
@@ -798,7 +851,7 @@ html::-webkit-scrollbar-thumb {
   left: 3rem;
   height: 2rem;
   width: 2rem;
-  background: #f5f5f5;
+  background: #ffe8f7;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -819,7 +872,7 @@ html::-webkit-scrollbar-thumb {
 
   align-items: center;
   justify-content: center;
-  background-color: #54424a;
+
   gap: 5%;
   margin-top: 10px;
 }
@@ -833,6 +886,7 @@ html::-webkit-scrollbar-thumb {
   width: 10%;
   background-color: #fff;
   transition: width 1s;
+  color: #ffe8f7;
 }
 .ArrowComment:hover {
   width: 15%;
@@ -844,13 +898,18 @@ html::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   gap: 5%;
-  background-color: #777;
-  width: 100%;
+  background-color: #f5f5f5;
+  width: 94%;
   height: 100%;
+  padding: 5%;
+  padding-bottom: 7%;
+  padding-left: 2%;
 }
 .map {
-  border: solid;
+  border-radius: 8px;
   width: 50%;
 }
 .boxFooter {
@@ -860,21 +919,51 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   gap: 2%;
 }
+.credit {
+  background-color: #f5f5f5;
+}
 /*------------------------media-query--------------------*/
-
+@media screen and(max-width: 1185px) {
+  .min_ecran {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+    padding: 2%;
+    gap: 8%;
+    font-size: 140%;
+  }
+  .menu_header {
+    display: none;
+  }
+}
 @media screen and (max-width: 1050px) {
   .menu_icon {
-    display: contents;
+    display: block;
   }
   .menu_header {
     display: none;
   }
   .menu {
     justify-content: flex-end;
+  }
+  .team .box-container .box-team {
+    height: 100%;
+    width: 40%;
+  }
+  .gallery-box {
+    width: 45%;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .team .box-container .box-team {
+    height: 100%;
+    width: 60%;
+  }
   .menu_icon {
     display: contents;
   }
@@ -884,7 +973,15 @@ html::-webkit-scrollbar-thumb {
   .menu {
     justify-content: flex-end;
   }
-
+  .home {
+    padding-bottom: 25%;
+    font-size: 50%;
+    background-color: #fff5ff;
+  }
+  .category {
+    align-items: center;
+    justify-content: center;
+  }
   .home .slide {
     position: relative;
     height: calc(100vh - 6rem);
@@ -905,7 +1002,7 @@ html::-webkit-scrollbar-thumb {
   }
   .home .slide .content .controls {
     position: static;
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
   .home .slide .content .controls div {
     margin: 0 0.5rem;
@@ -922,8 +1019,9 @@ html::-webkit-scrollbar-thumb {
     display: inline-block;
   }
 
-  .category {
-    padding-top: 15%;
+  .content > a {
+    width: 35%;
+    padding: 2%;
   }
 
   .box > p {
@@ -933,5 +1031,22 @@ html::-webkit-scrollbar-thumb {
     width: 30%;
 
     height: 300px;
+  }
+  .map {
+    border-radius: 8px;
+    width: 45%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  .gallery-box {
+    width: 45%;
+  }
+  .box{
+    width: 40%;
+  }
+  .box:hover{
+    width: 41%;
   }
 }

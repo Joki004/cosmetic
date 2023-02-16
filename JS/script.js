@@ -14,6 +14,13 @@ window.onscroll = () => {
 let slides = document.querySelectorAll(".home .slide");
 console.log(slides);
 let index = 0;
+carousel();
+function carousel() {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+  setTimeout(carousel, 2000);
+}
 
 function next() {
   slides[index].classList.remove("active");
@@ -39,6 +46,7 @@ function prevComment() {
   }
   console.log(indexComment);
   comment[indexComment].classList.add("activeC");
+ 
 }
 
 function nextComment() {
@@ -55,7 +63,6 @@ $(".toggle-btn").on("click", function () {
   $(this).toggleClass("active");
 });
 function priceDisplay(category) {
-
   let price = document.getElementsByClassName(category);
   console.log(category);
   Array.from(price).forEach((x) => {
