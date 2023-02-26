@@ -185,152 +185,83 @@ body,
   letter-spacing: 0.2rem;
 }
 
-/*-----------------------Body------------------*/
+/*-----------------------------------Body-----------------------*/
 
-h1 {
-  font-size: 80px;
-  width: 100%;
+.legend {
+  align-self: flex-start;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/*--------------------Price-----------------------*/
-.price {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-
-  gap: 10px;
-}
-
-.priceCategory {
-  display: flex;
-  width: 98%;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 8px;
-  padding: 1%;
-}
-
-.products {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  height: 100%;
-  gap: 5px;
-  padding: 5px;
-}
-
-.nameproduct,
-.priceProduct {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   border: solid;
-  width: 19%;
-  padding-left: 1%;
-  font-size: 20px;
-}
-.priceProduct {
-  justify-content: center;
-}
-.nameproducthead,
-.priceProducthead {
-  display: flex;
-  justify-content: center;
+  width: 60%;
+  height: 100%;
   align-items: center;
-  font-size: 150%;
-
-  width: 21%;
-  background-color: var(--firstbrown);
-  color: var(--GoldOnline);
-}
-.nameproducthead {
-  width: 80%;
-}
-.nameproduct {
-  width: 80%;
-}
-
-.titlePrice {
-  border-top: 1px solid var(--firstbrown);
+  padding: 1%;
+  padding-left: 2%;
+  margin-left: 10%;
+  margin-top: 5%;
+  border-radius: 8px;
+  background-color: var(--GoldOnline);
   color: black;
-  display: block;
-  font-size: 40px;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.text {
+  margin-top: 3%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  position: relative;
+  justify-content: center;
   width: 90%;
+  height: 100%;
+
+  padding: 2%;
+  text-align: justify;
+  gap: 12px;
+}
+
+.category {
   border-radius: 8px;
   border: solid;
-}
-.box {
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 2%;
+  background-image: url(https://images.unsplash.com/photo-1612690119274-8819a81c13a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80);
 }
 
-.Nitkowanie,
-.Barwanie,
-.Laminowanie,
-.Laminacja,
-.lifting,
-.Opalanie,
-.Makijaz,
-.Jonoforeza {
-  display: none;
+.description {
+  padding: 1%;
 }
-.titlePrice:hover {
-  color: black;
+.zalety {
+  padding-left: 5%;
 }
-
-.titlePrice:hover:before {
-  transition: width 600ms ease;
-  width: 100%;
+h4 {
+  padding-left: 2%;
+  color: var(--GoldOnline);
+  
 }
-.titlePrice:before {
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--firstbrown) var(--bggradient),
-    var(--GoldOnline)
-  );
-  content: "";
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 1%;
-  position: absolute;
+h2 {
+  color: var(--firstbrown);
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
-.titlePrice::nth-child(3) {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-/*-------------------------------------------------*/
 .footer {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px 8px 0 0;
-  background: var(--firstbrown);
-  padding-left: 1%;
-  padding-top: 1%;
-}
-
-.logoFooter {
-  width: 50%;
-}
-
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px 8px 0 0;
+    background: var(--firstbrown);
+    padding-left: 1%;
+    padding-top: 1%;
+  }
+  
+  .logoFooter {
+    width: 50%;
+  }
 /*------------------media query--------------------*/
 
 @media screen and (max-width: 1050px) {
@@ -361,10 +292,6 @@ h1 {
 }
 
 @media screen and (max-width: 400px) {
-  .nameproducthead,
-  .priceProducthead {
-    font-size: 100%;
-  }
 
   .logo_img {
     width: 50%;

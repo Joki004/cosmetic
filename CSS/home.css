@@ -7,18 +7,26 @@
   text-transform: capitalize;
   transition: all 0.5s linear;
   text-decoration: none;
+  font-size: 20px;
 }
-
+/*"Herr Von Muellerhoff"*/
+:root {
+  --firstbrown: #331e1d;
+  --seconfbrown: #976240;
+  --GOld: #f6e2ad;
+  --GoldOnline: #e4c05a;
+}
 body,
 .body {
-  width: 99.5%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*--overflow-x: hidden;--*/
+  overflow-x: hidden;
   padding: 0;
+  color: white;
 }
 
 html::-webkit-scrollbar {
@@ -30,7 +38,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #e84393;
+  background: var(--GoldOnline);
 }
 
 /*-------------------Header-------------------------------*/
@@ -39,10 +47,10 @@ html::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 98%;
+  width: 100%;
   height: 100%;
   align-items: center;
-  background-color: #ffe8f7;
+  background-color: var(--firstbrown);
   padding: 1% 1.5% 1.5% 1.5%;
 
   margin-right: 0;
@@ -57,9 +65,9 @@ html::-webkit-scrollbar-thumb {
 .logo_img {
   width: 10%;
   height: 100%;
-  background-color: #f19ec8;
-  border: solid #54424a;
+  background-color: var(--firstbrown);
   border-radius: 5%;
+  border: var(--GoldOnline) solid;
 }
 
 .logo {
@@ -69,11 +77,12 @@ html::-webkit-scrollbar-thumb {
   justify-content: flex-start;
 }
 .menu {
-  width: 60%;
+  width: 70%;
   height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .no-bullets {
@@ -100,7 +109,7 @@ html::-webkit-scrollbar-thumb {
 }
 .menu_header > li > a {
   text-decoration: none;
-  color: #222;
+  color: white;
 }
 .menu_header > li {
   padding: 0.5%;
@@ -112,6 +121,10 @@ html::-webkit-scrollbar-thumb {
 .menu_icon {
   display: none;
   cursor: pointer;
+}
+
+.shrinkedscreen {
+  display: none;
 }
 
 /*----------------------nav-bar--------------------------*/
@@ -148,32 +161,34 @@ html::-webkit-scrollbar-thumb {
 
 .navbar #close-navbar {
   position: absolute;
-  top: 3rem;
+  top: 1rem;
   right: 3rem;
   height: 5rem;
   width: 5rem;
   line-height: 5rem;
   text-align: center;
   background: #fff;
-  color: #222;
+  color: var(--firstbrown);
   cursor: pointer;
   font-size: 3rem;
 }
 
 .navbar #close-navbar:hover {
-  color: #fff;
-  background: #e84393;
+  color: var(--GoldOnline);
+  background: var(--firstbrown);
 }
 
 .navbar a {
-  font-size: 210%;
+  font-size: 180%;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--GoldOnline);
   font-weight: lighter;
 }
 
 .navbar a:hover {
-  color: #e84393;
+  background-color: var(--firstbrown);
+  border-radius: 8px;
+  padding: 1%;
   letter-spacing: 0.2rem;
 }
 
@@ -201,6 +216,9 @@ html::-webkit-scrollbar-thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
@@ -211,13 +229,14 @@ html::-webkit-scrollbar-thumb {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background: #fff5ff;
+  background: #fff;
   position: relative;
 }
 
 .home .slide .content img {
-  height: 25rem;
-  width: 25rem;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
   margin-bottom: 2rem;
   -webkit-animation: fadeUp 0.2s linear backwards 0.2s;
   animation: fadeUp 0.2s linear backwards 0.2s;
@@ -226,9 +245,10 @@ html::-webkit-scrollbar-thumb {
 }
 
 .home .slide .content span {
-  color: #e84393;
+  color: var(--GoldOnline);
   display: block;
-  font-size: 2rem;
+  text-align: center;
+  font-size: 150%;
   padding-bottom: 0.5rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -254,6 +274,11 @@ html::-webkit-scrollbar-thumb {
   bottom: 12%;
   right: -7rem;
 }
+.round {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
 
 .home .slide .content .controls div {
   height: 5rem;
@@ -261,8 +286,8 @@ html::-webkit-scrollbar-thumb {
   line-height: 5rem;
   text-align: center;
   font-size: 3rem;
-  background: #fff;
-  color: #222;
+  background: var(--GoldOnline);
+  color: var(--firstbrown);
   margin: 0 1rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -270,7 +295,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .home .slide .content .controls div:hover {
-  background: #e84393;
+  background: var(--firstbrown);
   color: #fff;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -291,16 +316,16 @@ html::-webkit-scrollbar-thumb {
   display: inline-block;
   margin-top: 1rem;
   border: 0.2rem solid #222;
-  background: #fff;
+  background: var(--GoldOnline);
   padding: 1rem 3rem;
   font-size: 1.7rem;
   cursor: pointer;
-  color: #222;
+  color: var(--firstbrown);
 }
 
 .btn:hover {
   color: #fff;
-  background: #e84393;
+  background: var(--firstbrown);
 }
 
 /*-----------------------category------------------------*/
@@ -315,10 +340,10 @@ html::-webkit-scrollbar-thumb {
   padding: 5% 1% 5% 1%;
   width: 99%;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--GoldOnline);
 }
 
-.heading{
+.heading {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,14 +364,14 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
   background-color: #f5f5f5;
-  color: #000000;
+  color: var(--firstbrown);
 }
 
 .box:hover {
-  width: 10%;
-  background-color: #000000;
+  width: 10.5%;
+  background-color: var(--firstbrown);
   color: white;
-  border: solid;
+  border: solid var(--GOld);
 }
 
 .category .box:hover img {
@@ -391,7 +416,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .about .content span {
-  color: #e84393;
+  color: var(--GoldOnline);
 }
 
 .about .content h3 {
@@ -559,12 +584,20 @@ html::-webkit-scrollbar-thumb {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, #f5f5f5),
+    color-stop(50.1%, #fff)
+  );
+  background: linear-gradient(var(--firstbrown) 40%, #fff 60%);
   width: 100%;
   height: 100%;
   gap: 50px;
   padding-top: 5%;
   padding-bottom: 7%;
+  padding: 1%;
 }
 .heading > h1 {
   font-size: 180%;
@@ -595,9 +628,10 @@ html::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25%;
+  width: 400px;
+  height: 300px;
   border: solid;
-  height: 257.3px;
+
   overflow: hidden;
 
   background-color: #fff5ff;
@@ -675,7 +709,7 @@ html::-webkit-scrollbar-thumb {
     color-stop(50%, #f5f5f5),
     color-stop(50.1%, #fff)
   );
-  background: linear-gradient(#f5f5f5 50%, #fff 50%);
+  background: linear-gradient(var(--GoldOnline) 40%, #fff 60%);
   width: 91%;
   height: 100%;
   padding-bottom: 7%;
@@ -700,7 +734,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .team .box-container .box-team {
-  border: 0.2rem solid #222;
+  border: 0.2rem solid var(--firstbrown);
   text-align: center;
   height: 52%;
   width: 30%;
@@ -780,7 +814,7 @@ html::-webkit-scrollbar-thumb {
 
 .team .box-container .box-team .content p {
   font-size: 1.5rem;
-  color: #e84393;
+  color: var(--GoldOnline);
 }
 
 /*-------------------------------Review--------------------*/
@@ -840,16 +874,16 @@ html::-webkit-scrollbar-thumb {
 
 .reviews-slider .slide .user .stars i {
   font-size: 1.5rem;
-  color: #e84393;
+  color: var(--GoldOnline);
 }
 
 .reviews-slider .slide .text {
   padding: 2rem;
-  background: #ffe8f7;
+  background: #fff;
   border-radius: 0.5rem;
   line-height: 2;
   font-size: 1.5rem;
-  color: #777;
+  color: var(--firstbrown);
   position: relative;
   margin-top: 2rem;
 }
@@ -861,18 +895,13 @@ html::-webkit-scrollbar-thumb {
   left: 3rem;
   height: 2rem;
   width: 2rem;
-  background: #ffe8f7;
+  background: #fff;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .swiper-slide {
   display: none;
-}
-
-.activeC {
-  display: flex;
-  flex-direction: column;
 }
 
 .controlsComment {
@@ -893,13 +922,76 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   font-size: 400%;
-  width: 10%;
+  width: 20%;
   background-color: #fff;
   transition: width 1s;
-  color: #ffe8f7;
+  color: var(--GoldOnline);
 }
 .ArrowComment:hover {
   width: 15%;
+}
+.opinions {
+  width: 97%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  color: var(--GoldOnline);
+  padding: 3%;
+  gap: 20px;
+}
+
+.opinions > h1 {
+  font-size: 200%;
+  color: var(--firstbrown);
+}
+.person {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  gap: 15px;
+  border-radius: 8px;
+  background-color: #777;
+}
+.person {
+  display: none;
+}
+.activeC {
+  display: flex;
+  flex-direction: column;
+  background-color: #976240;
+}
+.who {
+  align-self: flex-start;
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+.who > img {
+  border-radius: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+.idwho {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentaire {
+  text-align: justify;
+  border-radius: 8px;
+  background-color: var(--firstbrown);
+  padding: 2%;
+  font-size: 80%;
 }
 
 /*----------------footer------------------------------*/
@@ -907,65 +999,95 @@ html::-webkit-scrollbar-thumb {
 .footer {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 5%;
-  background-color: #f5f5f5;
+  background-color: var(--firstbrown);
   width: 94%;
   height: 100%;
   padding: 5%;
   padding-bottom: 7%;
   padding-left: 2%;
+  border-radius: 8px 8px 0 0;
 }
 .map {
   border-radius: 8px;
   width: 50%;
+  font-family: "Herr Von Muellerhoff";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.map > h3 {
+  color: var(--GoldOnline);
 }
 .boxFooter {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content:flex-start;
-  gap: 10px;
+  justify-content: flex-start;
+  gap: 20px;
 }
 .credit {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  background-color: #f5f5f5;
+  width: 99%;
+  flex-direction: row;
+  background-color: var(--firstbrown);
+  padding: 1%;
 }
 
-.social:hover{
+.social:hover {
   width: 40px;
   height: 50px;
 }
-.shareFooter{
+.shareFooter {
   padding: 5%;
   width: 100%;
- 
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-.social{
+.social {
   margin: 3%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f19ec8;
+  color: var(--GoldOnline);
   border: solid;
   width: 30px;
   height: 30px;
 }
 
-.color{
-  color: #f19ec8;
+.color {
+  color: var(--GoldOnline);
+}
+
+.logoFooter {
+  width:100%;
+  aspect-ratio: 2/1;
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+  object-fit: cover;
+
+  height: auto;
 }
 /*------------------------media-query--------------------*/
+
+@media screen and(max-width: 1445px) {
+  .gosht {
+    display: none;
+    color: red;
+  }
+  .shrinkedscreen {
+    display: block;
+  }
+}
 @media screen and(max-width: 1185px) {
   .min_ecran {
     display: flex;
@@ -981,6 +1103,12 @@ html::-webkit-scrollbar-thumb {
   }
   .menu_header {
     display: none;
+  }
+  .gosht {
+    display: none;
+  }
+  .shrinkedscreen {
+    display: flex;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -998,24 +1126,54 @@ html::-webkit-scrollbar-thumb {
     width: 40%;
   }
   .gallery-box {
-    width: 45%;
+    width: 400px;
+  height: 300px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+  .map {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10%;
+
+  }
+
+  .map>h3{
+    font-family: "Herr Von Muellerhoff";
+    font-size: 150%;
+  }
+  .swiper-wrapper {
+    width: 100%;
+    font-size: 20%;
+  }
+  .swiper-slide {
+    border: solid;
+  }
+
+  .text {
+    font-size: 20%;
+    border: solid;
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 768px) {
-
-  .team{
+  .team {
     margin-bottom: 20%;
     border: solid;
   }
-  .reviews{
+  .reviews {
     border: solid;
     height: 50rem;
-    
+
     margin-bottom: 20%;
   }
 
-  .text{
+  .text {
     font-size: 10%;
     width: 100%;
   }
@@ -1049,7 +1207,7 @@ html::-webkit-scrollbar-thumb {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 86%;
     background: rgba(255, 255, 255, 0.7);
     height: 100%;
     -webkit-box-align: center;
@@ -1062,12 +1220,27 @@ html::-webkit-scrollbar-thumb {
   .home .slide .content .controls {
     position: static;
     margin-top: 2rem;
+    display: none;
   }
   .home .slide .content .controls div {
     margin: 0 0.5rem;
   }
   .home .slide .image {
     width: 100%;
+  }
+
+  .home > .slide > .content > span {
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    font-size: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5%;
+    padding: 1%;
+    background-color: var(--firstbrown);
   }
   .swiper-button-next,
   .swiper-button-prev {
@@ -1086,50 +1259,50 @@ html::-webkit-scrollbar-thumb {
   .box > p {
     font-size: 70%;
   }
-  .gallery-box {
-    width: 30%;
 
-    height: 300px;
-  }
   .map {
     border-radius: 8px;
-    width: 45%;
+    width: 100%;
   }
   body {
     overflow-x: hidden;
   }
 
   .gallery-box {
-    width: 45%;
+    width: 200px;
+  height: 150px;
   }
-  .box{
+  .box {
     width: 40%;
   }
-  .box:hover{
+  .box:hover {
     width: 41%;
   }
   .navbar {
     width: 90%;
   }
 
+  .btn {
+    text-align: center;
+    font-size: 30%;
+  }
 }
 
-@media screen and (max-width: 400px){
 
-
-  .navbar {
-    width: 70%;
+@media screen and (max-width: 400px) {
+  body
+   {
+   width: 100%;
+    overflow-x: hidden;
+   
   }
 
-  body,
-.body {
-  width: 90%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /*--overflow-x: hidden;--*/
-  padding: 0;
-}
+  .gallery-box {
+    width:175px;
+  height: 131,25px;
+  }
+
+  .logo_img{
+    width: 50%;
+  }
 }

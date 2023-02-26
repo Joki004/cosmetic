@@ -1,541 +1,86 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./CSS/styles.css">
-        <script src="https://kit.fontawesome.com/48698d6ae0.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        
-    </head>
-    <body class="body">
-      <!------------------------------Header----------------------------------------->
-        <div class="header">
-            <div class="logo">
-                <img class="logo_img" src="./img/perfume-bottle.png" alt="">
-            </div>
-            <div class="menu">
-                <ul class="no-bullets wrap menu_header">
-                    <li > <a href="#home">Home</a></li>
-                    <li><a href="./pages/price.html">Cennik</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#about">O Nas</a></li>
-                    <li><a href="./pages/contact.html">Kontakt</a></li>
-                </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Barby</title>
+    <link rel="icon" type="image/png" href="../img/Logotyp_mini.png"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap"
+      rel="stylesheet"
+    />
 
-                <ul class="min_ecran">
-                    <li><a href="#home"><i class='bx bx-home'></i></a></li>
-                    <li><a href="./pages/price.html"><i class='bx bx-purchase-tag-alt'></i></a></li>
-                    <li><a href="#gallery"><i class='bx bx-photo-album'></i></a></li>
-                    <li><a href="#about">O Nas</a></li>
-                    <li><a href="./pages/contact.html"><i class='bx bxs-contact'></i></a></li>
-                </ul>
-                <div class="menu_icon">
-                    <i class='bx bx-menu bx-lg  ' id="menu-btn" ></i>
-                </div>
-               
-            </div>
-        </div>
-       
-    <!------------------------------Nav-bar----------------------------------------->
-        <nav class="navbar">
-            <div id="close-navbar" class="fas fa-times"></div>
-            <a href="#home">Home</a>
-            <a href="./pages/price.html">Cennik</a>
-            <a href="#gallery">Galeria</a>
-            <a href="#about">O Nas</a>
-            <a href="./pages/contact.html">Kontakt</a>
-        </nav>
+    <script src="https://kit.fontawesome.com/48698d6ae0.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1
+        class="name"
+        data-value="Beauty Bar by Malgorzata Bartkowiak"
+        onload="explosive()"
+      >
+        Beauty Bar by Malgorzata Bartkowiak
+      </h1>
+    </main>
 
-    <!------------------------------Home----------------------------------------->
-        <section class="home" id="home">
-            <div class="slide active" >
-                <div class="content">
-                    <img src="./img/content-img-1.png" alt="">
-                    <span>About us </span>
-                    <h3>Cosmetic</h3>
-                    <a href="#" class="btn">read more</a>
-                    <div class="controls">
-                        <div class="fas fa-angle-left" onclick="prev()"></div>
-                        <div class="fas fa-angle-right" onclick="next()"></div>
-                    </div>
-                </div>
-                <div class="image">
-                    <img src="./img/home-img-1.png" alt="">
-                </div>
-            </div>
-            <div class="slide">
-                <div class="content">
-                    <img src="./img/content-img-2.png" alt="">
-                    <span>new arrivals 2022</span>
-                    <h3>accessories</h3>
-                    <a href="#" class="btn">read more</a>
-                    <div class="controls">
-                        <div class="fas fa-angle-left" onclick="prev()"></div>
-                        <div class="fas fa-angle-right" onclick="next()"></div>
-                    </div>
-                </div>
-                <div class="image">
-                    <img src="./img/home-img-2.png" alt="">
-                </div>
-            </div>
-    
-            <div class="slide">
-                <div class="content">
-                    <img src="./img/content-img-3.png" alt="">
-                    <span>new collections</span>
-                    <h3>skin care</h3>
-                    <a href="#" class="btn">read more</a>
-                    <div class="controls">
-                        <div class="fas fa-angle-left" onclick="prev()"></div>
-                        <div class="fas fa-angle-right" onclick="next()"></div>
-                    </div>
-                </div>
-                <div class="image">
-                    <img src="./img/home-img-3.png" alt="">
-                </div>
-            </div>
+    <nav class="welcomeNav">
+      <div id="nav-links">
+        <a class="nav-link" href="./pages/home.html">
+          <h2 class="nav-link-label rubik-font">Dom</h2>
+          <img
+            class="nav-link-image"
+            src="https://images.unsplash.com/photo-1573461160327-b450ce3d8e7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+          />
+        </a>
+        <a class="nav-link" href="./pages/price.html">
+          <h2 class="nav-link-label rubik-font">Cennik</h2>
+          <img
+            class="nav-link-image"
+            src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+          />
+        </a>
+        <a class="nav-link" href="./pages/traitement.html">
+          <h2 class="nav-link-label rubik-font">Opis zabiegów</h2>
+          <img
+            class="nav-link-image"
+            src="https://images.unsplash.com/photo-1590439471364-192aa70c0b53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+          />
+        </a>
+        <a class="nav-link" href="./pages/AboutUs.html">
+          <h2 class="nav-link-label rubik-font">O mnie</h2>
+          <img
+            class="nav-link-image"
+            src="https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          />
+        </a>
+        <a class="nav-link" href="./pages/contact.html">
+          <h2 class="nav-link-label rubik-font">Kontakt</h2>
+          <img
+            class="nav-link-image"
+            src="https://images.unsplash.com/photo-1520923642038-b4259acecbd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=819&q=80"
+          />
+        </a>
+      </div>
+    </nav>
 
-            <div class="slide">
-                <div class="content">
-                    <img src="./img/content-img-1.png" alt="">
-                    <span>new collections</span>
-                    <h3>skin care</h3>
-                    <a href="#" class="btn">read more</a>
-                    <div class="controls">
-                        <div class="fas fa-angle-left" onclick="prev()"></div>
-                        <div class="fas fa-angle-right" onclick="next()"></div>
-                    </div>
-                </div>
-                <div class="image">
-                    <img src="./img/home-img-3.png" alt="">
-                </div>
-            </div>
-        </section>
-
-
-        <!-------------------Category section-------------------->
-
-        <section class="category">
-
-            <a href="#" class="box">
-                <img src="./img/category-1.png" alt="">
-                <p>cosmetics</p>
-            </a>
-    
-            <a href="#" class="box">
-                <img src="./img/category-2.png" alt="">
-                <p>makeup</p>
-            </a>
-    
-            <a href="#" class="box">
-                <img src="./img/category-3.png" alt="">
-                <p>powder</p>
-            </a>
-    
-            <a href="#" class="box">
-                <img src="./img/category-4.png" alt="">
-                <p>lotions</p>
-            </a>
-    
-            <a href="#" class="box">
-                <img src="./img/category-5.png" alt="">
-                <p>lipstick</p>
-            </a>
-    
-            <a href="#" class="box">
-                <img src="./img/category-6.png" alt="">
-                <p>mascara</p>
-            </a>
-        </section>
-
-        
-        <section class="price" >
-            <h1 id="price">Price</h1>
-           <!-- -->
-<!-----------------------------------------------------------cosmetic---------------------------->
-            <div class="price-category">
-                <span class="title-category">
-                <p> Nitkowanie </p>
-                <div class="toggle-btn" onclick="priceDisplay('threading')">
-                    <div class="arrow"></div>
-                   </div>
-                </span>
-                <ul id="threading" class="threading">
-                    <li><p class="service title">Usługi</p><span class="service-price title">Cena</span></li>
-                    <li><p class="service">Nitkowanie brwi, masaż, konsultacja</p><span class="service-price">35,00 zl</span></li>
-                    <li><p class="service">Nitkowanie, barwienie, masaż, konsultacja</p><span class="service-price">50,00 zl</span></li>
-                    <li><p class="service">Nitkowanie, henna pudrowa - organiczna, geometria</p><span class="service-price">85,00 zl</span></li>
-                    <li><p class="service">Nitkowanie górnej wargi</p><span class="service-price">25,00 zl</span></li>
-                    <li><p class="service">Nitkowanie brody</p><span class="service-price">25,00 zl</span></li>
-                    <li><p class="service">Nitkowanie policzków</p><span class="service-price">39,00 zl</span></li>
-                    <li><p class="service">Nitkowanie brwi, górnej wargi i brody</p><span class="service-price">70,00 zl</span></li>
-                </ul>
-            </div>
-<!-----------------------------------------------------------Makeup---------------------------->
-
-            <div class="price-category">
-                <span class="title-category">
-                    <p> Laminowanie </p>
-                    <div class="toggle-btn" onclick="priceDisplay('lamination')">
-                        <div class="arrow"></div>
-                       </div>
-                    </span>
-                <ul id="lamination" class="lamination">
-                    <li><p class="service title">zabieg</p><span class="service-price title">cena</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    <li><p class="service">Lorem Ipsum Dolor</p><span class="service-price">15zl</span></li>
-                    
-                </ul>
-            </div>
-<!-----------------------------------------------------------powder---------------------------->
-
-            <div class="price-category">
-                <span class="title-category">
-                    <p> Barwanie </p>
-                    <div class="toggle-btn" onclick="priceDisplay('powder')">
-                        <div class="arrow"></div>
-                       </div>
-                    </span>
-                <ul id="powder" class="powder">
-                    <li><p class="service title">Usługi</p><span class="service-price title">cena</span></li>
-                    <li><p class="service">Barwienie farbką</p><span class="service-price">25,00 zl</span></li>
-                    <li><p class="service">Barwienie henna pudrowa - organiczna</p><span class="service-price">65,00 zl</span></li>
-                    
-                </ul>
-            </div>
-
-        </section>
-
-
-    <!-- gallery section starts  -->
-
-    <section class="gallery" id="gallery">
-
-        <div class="heading">
-            <h1>our gallery</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur officia beatae distinctio
-                minus optio?</p>
-        </div>
-
-        <div class="lightbox">
-            <div class="gallery-box">
-                <a href="./img/img-1.jpg"><img src="./img/img-1.jpg" alt=""></a>
-            </div>
-            <div class="gallery-box">
-                <a href="./img/img-2.jpg"><img src="./img/img-2.jpg" alt=""></a>
-            </div>
-            <div class="gallery-box">
-                <a href="./img/img-3.jpg"><img src="./img/img-3.jpg" alt=""></a>
-            </div>
-            <div class="gallery-box">
-                <a href="./img/img-4.jpg"><img src="./img/img-4.jpg" alt=""></a>
-            </div>
-            <div class="gallery-box">
-                <a href="./img/img-5.jpg"><img src="./img/img-5.jpg" alt=""></a>
-            </div>
-            <div class="gallery-box">
-                <a href="./img/img-6.jpg"><img src="./img/img-6.jpg" alt=""></a>
-            </div>
-
-          
-          
-          
-            
-           
-        </div>
-
-    </section>
-
-    <!-- gallery section ends -->
-            <!-- about section starts  -->
-
-        <section class="about" id="about">
-
-            <div class="content">
-                <span>why choose us?</span>
-                <h3>makeup makes difference</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum explicabo, quos voluptate incidunt illo,
-                blanditiis, accusamus ut quisquam quia sapiente iure. Rerum earum corrupti neque, nobis ratione
-                obcaecati voluptatem fuga.</p>
-                <a href="./pages/AboutUs.html" class="btn align-center">read more</a>
-            </div>
-
-        </section>
-
-    <!-- about section ends -->
-
-
-      <!-- team section starts  -->
-
-      <section class="team" id="team">
-
-        <div class="heading">
-            <h1>our team</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur officia beatae distinctio
-                minus optio?</p>
-        </div>
-        
-        <div class="box-container">
-
-           
-            
-            <div class="box-team">
-                <div class="image-team">
-                    <img src="./img/team-1.png" alt="">
-                    <div class="share">
-                        <a href="https://www.facebook.com/naimasultana.dhaly.5" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3> Dhaly</h3>
-                    <p>make-up artist</p>
-                </div>
-            </div>
-
-            <div class="box-team">
-                <div class="image-team">
-                    <img src="./img/team-2.png" alt="">
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>sana shaikh</h3>
-                    <p>make-up artist</p>
-                </div>
-            </div>
-
-            <div class="box-team">
-                <div class="image-team">
-                    <img src="./img/team-3.png" alt="">
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>sana shaikh</h3>
-                    <p>make-up artist</p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- team section ends -->
-
-
-     <!-- reviews section starts  -->
-
-     <section class="reviews">
-
-        <div class="swiper reviews-slider">
-
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide slide activeC">
-                    <div class="user">
-                        <img src="./img/pic-1.png" alt="">
-                        <div class="info">
-                            <h3>john deo</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa aspernatur
-                        incidunt iusto veniam cumque error quaerat officia. Aspernatur?</p>
-                        <div class="controlsComment">
-                            <div class="fas fa-angle-left ArrowComment" onclick="prevComment()"></div>
-                            <div class="fas fa-angle-right ArrowComment" onclick="nextComment()"></div>
-                        </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <div class="user">
-                        <img src="./img/pic-2.png" alt="">
-                        <div class="info">
-                            <h3>john deo</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum similique, numquam
-                        non, quasi, voluptatibus perspiciatis fugiat incidunt veniam nulla in aut aliquid necessitatibus
-                        nobis reiciendis ullam explicabo. Nulla, rem adipisci.</p>
-                        <div class="controlsComment">
-                            <div class="fas fa-angle-left ArrowComment" onclick="prevComment()"></div>
-                            <div class="fas fa-angle-right ArrowComment" onclick="nextComment()"></div>
-                        </div>
-                    </div>
-
-                <div class="swiper-slide slide">
-                    <div class="user">
-                        <img src="./img/pic-3.png" alt="">
-                        <div class="info">
-                            <h3>john deo</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit aliquid mollitia
-                        voluptatem alias illo officiis.</p>
-                        <div class="controlsComment">
-                            <div class="fas fa-angle-left ArrowComment" onclick="prevComment()"></div>
-                            <div class="fas fa-angle-right ArrowComment" onclick="nextComment()"></div>
-                        </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <div class="user">
-                        <img src="./img/pic-4.png" alt="">
-                        <div class="info">
-                            <h3>john deo</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa aspernatur
-                        incidunt iusto veniam cumque error quaerat officia. Aspernatur?</p>
-                        <div class="controlsComment">
-                            <div class="fas fa-angle-left ArrowComment" onclick="prevComment()"></div>
-                            <div class="fas fa-angle-right ArrowComment" onclick="nextComment()"></div>
-                        </div>
-                    </div>
-
-                <div class="swiper-slide slide">
-                    <div class="user">
-                        <img src="./img/pic-5.png" alt="">
-                        <div class="info">
-                            <h3>john deo</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sequi minima sed
-                        obcaecati iste beatae quo praesentium, deleniti earum velit labore nobis voluptates a quam
-                        veniam delectus fugiat! Saepe, eos!</p>
-                        <div class="controlsComment">
-                            <div class="fas fa-angle-left ArrowComment" onclick="prevComment()"></div>
-                            <div class="fas fa-angle-right ArrowComment" onclick="nextComment()"></div>
-                        </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <div class="user">
-                        <img src="./img/pic-6.png" alt="">
-                        <div class="info">
-                            <h3>john deo</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa aspernatur
-                        incidunt iusto veniam cumque error quaerat officia. Aspernatur?</p>
-                        <div class="controlsComment">
-                            <div class="fas fa-angle-left ArrowComment" onclick="prevComment()"></div>
-                            <div class="fas fa-angle-right ArrowComment" onclick="nextComment()"></div>
-                        </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- reviews section ends  -->
-
-
-
-    <section class="footer">
-        <div class="map">
-            <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9880.980218964643!2d19.452104698473992!3d51.74684237639365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a34c34efd1a8b%3A0xdf7768c012278b69!2zUGlvdHJrb3dza2EgMjc3LCA5MC0wMDEgxYHDs2TFug!5e0!3m2!1sfr!2spl!4v1676307305577!5m2!1sfr!2spl" 
-            width="100%" height="450" style="border:0;" 
-            allowfullscreen="" loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="boxFooter" id="contact">
-            <h3>contact info</h3>
-            <p> <i class="fas fa-phone"></i> 01878-307396 </p>
-            <p> <i class="fas fa-phone"></i> 01684-346530 </p>
-            <p> <i class="fas fa-envelope"></i> dhaly@gmail.com </p>
-            <p> <i class="fas fa-map"></i> City Collage, Cox's Bazar, Bangladesh. </p>
-            <p>  
-                <p> <i class='bx bx-time-five'></i> Godziny Otwarta</p>
-                <p> <i class='bx bx-chevron-right'></i> pn-pt: 09:00 - 16:00</p>
-                <p> <i class='bx bx-chevron-right'></i> pn-pt: 09:00 - 16:00</p>
-            </p>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-
-
-        </div>
-
-        
-
+    <button id="nav-toggle" type="button" onclick="toggleNav()">
+      <i class="open bx bx-chevron-down"></i>
+      <i class="close bx bx-chevron-up"></i>
+    </button>
+    <div class="click">
+      <img id="imageArrow" src="./img/left-arrow-7252.png" alt="" />
+      <p>Kliknij tu</p>
     </div>
-
-  
-    </section>
-    <div class="credit"> Design and Develop by <a target="_blank" href="https://itsazzad.com/"><span>IT
-        Sazzad</span></a> | all rights reserved!
-     </div>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="./JS/script.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        
-    </body>
+    <script src="script.js"></script>
+  </body>
 </html>
-
